@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companhia Aérea</title>
+    <script src="teste.js"></script>
+    <link href="teste.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>TremQueVoa Linhas Aéreas</h1>
+        <p>Porque voar é bom demais da conta</p>
+    </header>
+    <section id="atribuicaoVoos">
+        <p>Insira abaixo os voos e seus respectivos tempos de duração, inserindo um voo por linha, no formato abaixo</p>
+        <textarea id="cadastroVoos" placeholder="Origem X Destino; Duração em minutos (ex: São Paulo X Salvador; 60)" rows="6" cols="60"></textarea>
+        <p>Insira abaixo as aeronaves disponíveis para voo, inserindo uma aeronave por linha, conforme formato abaixo</p>
+        <textarea id="cadastroAeronaves" placeholder="Identificador da aeronave-Modelo (ex: AER002-Boeing)" rows="6" cols="60"></textarea>
+        <br>
+        <button onclick="atribuirVoos()">Atribuir voos</button>
+    </section>
+    <section id="resumo">
+        <h2>Voos atribuídos por aeronave</h2>
+        <ul id="voosPorAviao"></ul>
+        <h2>Resumo de atividades por aeronave</h2>
+        <ul id="resumoAviao"></ul>
+    </section>
+    <footer>
+        <p>Mantido e desenvolvido por <a href="https://www.geogin.com.br" target="_blank">Geogin</a></p>
+    </footer>
+</body>
+</html>
